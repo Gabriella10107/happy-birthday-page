@@ -29,18 +29,15 @@ export default function App() {
 
             <div className="birthday-message-box">
               <p className="birthday-message">
-                <span className="emoji-decor">🎈</span> Wishing you a day filled
-                with joy, laughter, and sweet surprises!{" "}
+                <span className="emoji-decor">🎈</span> ပျော်ရွှင်စရာမွေးနေ့မှစ၍ ရှေ့ဆက်ရမယ့်ခရီးအဖြာဖြာမှာ လုပ်သမျှအရာရာဆင်ပြေပါစေ တောသူမလေးရေ{" "}
                 <span className="emoji-decor">🍰</span>
               </p>
               <p className="birthday-message">
-                <span className="emoji-decor">✨</span> May your smile shine
-                brighter than ever and your heart feel as warm as the sun!{" "}
+                <span className="emoji-decor">✨</span> ပျော်ရွှင်တဲ့အပြုံး နွေးထွေးတဲ့မေတ္တာတွေနဲ့ထိုက်တန်သူများနဲ့ တွေ့ဆုံရပါစေလို့ဆုတောင်းပေးပါတယ် ပြည့်စုံရေ.{" "}
                 <span className="emoji-decor">🌞</span>
               </p>
               <p className="birthday-message">
-                <span className="emoji-decor">🥳</span> May this year bring you
-                endless happiness, success, and wonderful memories!{" "}
+                <span className="emoji-decor">🥳</span> ရှေ့ဆက်မယ့်ဘဝခရီးအဖြာဖြာမှာလည်း ကံကောင်းခြင်းတွေနဲ့အတူ ချစ်ရတဲ့သူတွေနဲ့သာ ဘဝကိုပျော်ပျော်ကြီးဖြတ်သန်းနိုင်ပါစေဗျာ!{" "}
                 <span className="emoji-decor">🎁</span>
               </p>
             </div>
@@ -48,7 +45,7 @@ export default function App() {
             <div className="birthday-extras">
               <div className="polaroid-frame">
                 <img
-                  src="./image/pyae_sone.png"
+                  src="./image/pyae_sone_1.jpg"
                   alt="Birthday Celebration"
                   className="birthday-image"
                   style={{
