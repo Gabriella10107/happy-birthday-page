@@ -1,0 +1,213 @@
+/* BirthdayWish.css */
+
+/* Base Styles */
+.birthday-app {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Confetti Animation */
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    opacity: 0.7;
+    animation: confetti-fall 5s linear infinite;
+  }
+  
+  .confetti:nth-child(2) {
+    background-color: #0f0;
+    left: 10%;
+    animation-delay: 1s;
+  }
+  
+  .confetti:nth-child(3) {
+    background-color: #00f;
+    left: 20%;
+    animation-delay: 2s;
+  }
+  
+  @keyframes confetti-fall {
+    0% { transform: translateY(-100vh) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+  }
+  
+  /* Main Container */
+  .birthday-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* Image Container */
+  .birthday-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Image Styles */
+  .birthday-image {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    border: 8px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .birthday-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Content Styles */
+  .birthday-content {
+    flex: 1;
+    animation: slideIn 1s ease-out forwards;
+  }
+  
+  .birthday-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .birthday-title {
+    color: #d23669;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .floating-hearts {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .birthday-message-box {
+    background: #fff9f9;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px dashed #ffb6c1;
+  }
+  
+  .birthday-message {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .emoji-decor {
+    font-size: 1.3rem;
+    margin: 0 5px;
+  }
+  
+  /* Polaroid Frame */
+  .polaroid-frame {
+    background: white;
+    padding: 15px 15px 40px;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
+    display: inline-block;
+    margin: 20px 0;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  
+  .floating-balloons {
+    position: absolute;
+    font-size: 2rem;
+    animation: balloons 8s ease-in-out infinite;
+  }
+  
+  @keyframes balloons {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(20px, -20px) rotate(5deg); }
+    50% { transform: translate(-15px, -30px) rotate(-5deg); }
+    75% { transform: translate(10px, -10px) rotate(3deg); }
+  }
+  
+  .birthday-footer {
+    font-size: 1.1rem;
+    color: #d23669;
+    margin-top: 20px;
+    font-weight: bold;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .birthday-container {
+      flex-direction: column;
+    }
+    
+    .birthday-image {
+      max-height: 50vh;
+    }
+    
+    .birthday-title {
+      font-size: 1.8rem;
+    }
+    
+    .birthday-message {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .birthday-card {
+      padding: 20px;
+    }
+    
+    .birthday-title {
+      font-size: 1.5rem;
+    }
+    
+    .polaroid-frame {
+      padding: 10px 10px 30px;
+    }
+  }
